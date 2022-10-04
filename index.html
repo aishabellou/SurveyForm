@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>survey-form</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	</head>
+	<body>
+		<div id="logo">
+			<article >
+				<img src="nysc.png" width="10%" height="10%">
+			</article>
+		</div>
+		
+	<h1 id="title"> NATIONAL YOUTH SERVICE CORPS SURVEY FORM FOR (PCM)</h1>
+	<p id="motto">Service and Humility</p>
+	<p id="description">Thank you for taking the time to help us improve your experience!!</p>
+
+	
+			
+			<form id="survey-form">
+				<fieldset>
+			<label id="name-label">Name: <input type="text" 
+				id="name" class= "forms" placeholder="Enter your Name" required/></label>
+			
+				
+			<label id="email-label">Email: <input type="email" 
+				id="email" class= "forms" placeholder="Enter your email" required/></label>
+			
+		 		
+		 	<label id="number-label">Age<span id="redd">(optional)</span>: 
+				<input type="number"placeholder="Age" min=10 max=100  class= "forms"required/></label>
+		 	
+		</fieldset>
+						<fieldset>
+		 		      <p>Which option best describes your current role?</p>
+		 		
+		 		<select id="dropdown">
+		 		<option value="option" disabled selected value> Select an Option</option>
+		 		<option value="corp">A prospective corp member</option>
+		 		<option value="student">A student</option>
+		 		<option value="other">Other</option>
+		 		</select>
+		 		
+
+		 		<label>Gender</label>
+		 		<label><input type="radio" name="gender" value="male" class="gen">Male</label>
+		 		<label><input type ="radio" name="gender" value="female" class="gen">Female</label>
+		 		<label><input type="radio" name="gender" value="other" class="gen">Other</label>
+
+		 		
+		 		<p>When you first find out you have been deployed to a state you've never been to how do you feel?</p>
+		 		<input type="radio" name="RAdio" value="scared" class="gen" checked>Scared<br>
+		 		<input type="radio" name="RAdio" value="excited" class="gen">Excited<br>
+		 		<input type="radio" name="RAdio" value="i dont know" class="gen">I dont know<br>
+		 		
+ 
+		 		<p>When you first learn that the soldiers are in charge of teaching you how to parade how do you feel?</p>
+		 		
+		 		<label><input type="radio" name="feel" value="scared" class="gen">Scared </label>
+				 <label><input type="radio" name= "feel" value="excited" class="gen">Excited</label>
+				 <label><input type="radio" name="feel" value="confident" class="gen">Confident</label>
+				 <label><input type="radio" name="feel" value="unconfident" class="gen">Unconfident</label>
+		 		</fieldset>
+
+				 		<fieldset>
+		 		<p>How can we improve your experience with us?</p>
+		 		(choose all that apply)<br>
+		 		
+		 		<label><input type="checkbox" value="camp" class="gen">Camp activities</label><br>
+		 		<label><input type="checkbox" value="kitchen" class="gen">Kitchen services</label><br>
+		 		<label><input type="checkbox" value="Accomodation" class="gen">Accomodation</label><br>
+		 		<label><input type="checkbox" value="saed" class="gen">SAED program</label><br>
+		 		<label><input type="checkbox" value="Allow" class="gen">Allowances</label><br>
+
+		 		
+		 		<textarea rows="3" cols="30" placeholder="Leave a Comments"></textarea>
+			</fieldset>
+		 		<input type="submit" value="submit" id="submit">
+	</form>
+	</body>
+	</html>
